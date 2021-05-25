@@ -4,7 +4,7 @@
 	
 using std::string;
 
-
+Paqueteria::Paqueteria() {}
 
 Paqueteria::Paqueteria(string nombre_paqueteria, string direccion, string color) {
     this-> nombre_paqueteria = nombre_paqueteria;

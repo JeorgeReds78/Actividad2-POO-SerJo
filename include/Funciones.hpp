@@ -7,16 +7,16 @@ Definicion de funciones utilizadas en main
 */
 
 //Codigo Funciones creado por Jorge Rojas
-#include "../include/Enviador.hpp"
-#include "../include/Paquete.hpp"
-#include "../include/Destinatario.hpp"
-#include "../include/Caja.hpp"
-#include "../include/Cilindro.hpp"
-#include "../include/Sobre.hpp"
-#include "../include/Paqueteria.hpp"
+#include "Enviador.hpp"
+#include "Paquete.hpp"
+#include "Destinatario.hpp"
+#include "Caja.hpp"
+#include "Cilindro.hpp"
+#include "Sobre.hpp"
+#include "Paqueteria.hpp"
+
 
 void enviarPaquete();
-
 void efecto_carga(int time, const string message, char symbol);
 
 
