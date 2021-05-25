@@ -36,7 +36,7 @@ class Paquete  {
 
 	public:
 		//Constructores
-		
+		Paquete();
 		Paquete(string paqueteria, string salida, string color,
 		string de,
 		string para, string direccion_destinatario,

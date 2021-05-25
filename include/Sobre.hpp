@@ -11,11 +11,12 @@ Definicion de clase Destinatario
 #ifndef SOBRE_H
 #define SOBRE_H
 
+#include "Paquete.hpp"
 #include <string>
 
 using std::string;
 	
-class Sobre  {
+class Sobre : public Paquete {
     private:
 		double largo;
         double ancho;
@@ -43,6 +44,6 @@ class Sobre  {
 
 		//otros
 
-		void pedidoFinal();
+		void pedido_final();
 };
 #endif

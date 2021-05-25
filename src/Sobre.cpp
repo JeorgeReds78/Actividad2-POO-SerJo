@@ -2,7 +2,7 @@
 #include "../include/Sobre.hpp"  
 #include <string>
 	
-using std::string;
+using namespace std;
 
 
 Sobre::Sobre(string paqueteria, string salida, string color,
@@ -10,7 +10,8 @@ Sobre::Sobre(string paqueteria, string salida, string color,
         string para, string direccion_destinatario,
 		string id_paquete, double peso,
 		string fecha_envio, string notas, 
-        double largo, double ancho, int estampas){
+        double largo, double ancho, int estampas) {
+            
     this-> largo = largo;
     this-> ancho = ancho;
     this-> estampas = estampas;
@@ -28,7 +29,7 @@ void Sobre::set_estampas(double estampas) {
     this-> estampas = estampas;
 }
 
-void Sobre::pedidoFinal() {
+void Sobre::pedido_final() {
     cout << "Informacion de Pedido: " << endl;
     cout << "largo" << get_largo() << endl;
     cout << "ancho" << get_ancho() << endl;

@@ -11,11 +11,12 @@ Definicion de clase Destinatario
 #ifndef CILINDRO_H
 #define CILINDRO_H
 
+#include "Paquete.hpp"
 #include <string>
 
 using std::string;
 	
-class Cilindro  {
+class Cilindro : public Paquete  {
     private:
 		double radio;
         double altura;
@@ -39,7 +40,7 @@ class Cilindro  {
 
 		//otros
 
-		void pedidoFinal();
+		void pedido_final();
 
 };
 #endif

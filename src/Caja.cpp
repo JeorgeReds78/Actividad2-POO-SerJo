@@ -28,7 +28,7 @@ void Caja::set_alto(double altura) {
     this-> altura = altura;
 }
 
-void Caja::pedidoFinal() {
+void Caja::pedido_final() {
     cout << "Informacion de Pedido: " << endl;
     cout << "largo" << get_largo() << endl;
     cout << "ancho" << get_ancho() << endl;

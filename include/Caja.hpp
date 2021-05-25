@@ -44,7 +44,7 @@ class Caja : public Paquete  {
 
 		//otros
 
-		void pedidoFinal();
+		void pedido_final();
 
 
 
