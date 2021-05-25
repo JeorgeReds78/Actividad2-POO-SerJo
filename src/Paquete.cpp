@@ -16,9 +16,7 @@ Paquete::Paquete(string paqueteria, string salida, string color,
 		string id_paquete, double peso,
 		string fecha_envio, string notas) {
 
-    nom_paqueteria = Paqueteria(paqueteria);
-    salida_dir = Paqueteria(salida);
-    color_id = Paqueteria(color);
+    datos_paqueteria = Paqueteria(paqueteria,salida,color);
 
     nombre_enviador = Enviador(de);
     datos_destinatario = Destinatario(para, direccion_destinatario);
@@ -30,16 +28,10 @@ Paquete::Paquete(string paqueteria, string salida, string color,
 
 }
 
-void Paquete::set_nombre_paquetera(string paqueteria) {
-    nom_paqueteria.set_nombreP(paqueteria);
-}
-
-void Paquete::(string salida) {
-    salida_dir.set_direccionP(salida);
-}
-
-void Paquete::set_color_paqueteria(string color) {
-    color_id.set_colorP(color);
+void Paquete::set_datos_paqueteria(string paqueteria,string salida,string color) {
+    datos_paqueteria.set_nombreP(paqueteria);
+    datos_paqueteria.set_direccionP(salida);
+    datos_paqueteria.set_colorP(color);
 }
 
 void Paquete::set_nombre_enviador(string de) {
@@ -69,9 +61,9 @@ void Paquete::set_notas(string notas) {
 
 void Paquete::print() {
 
-        cout << "Paqueteria: " << nom_paqueteria.get_nombreP() << endl;
-        cout << "Direccion de Envio: " << salida_dir.get_direccionP() << endl;
-        cout << "Color: " << color_id.get_colorP() << endl;
+        cout << "Paqueteria: " << datos_paqueteria.get_nombreP() << endl;
+        cout << "Direccion de Envio: " << datos_paqueteria.get_direccionP() << endl;
+        cout << "Color: " << datos_paqueteria.get_colorP() << endl;
     	cout << "De: " << nombre_enviador.get_nombre_enviador() << endl; 
         cout << "Para: " << datos_destinatario.get_nombre_destinatario() << endl;
         cout << "Direccion: " << datos_destinatario.get_direccion() << endl;

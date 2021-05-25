@@ -24,7 +24,7 @@ class Paqueteria  {
 		
 	public:
 		//Constructor
-		//Paqueteria();
+		Paqueteria();
 		Paqueteria(string nombre_paqueteria, string direccion, string color);
 
 		//Geters

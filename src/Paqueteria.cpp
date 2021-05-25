@@ -4,13 +4,8 @@
 	
 using std::string;
 
-/*
-Paqueteria::Paqueteria() {
-    string nombre_paqueteria = "Fedex/DHL/UPS...";
-    string direccion = "Av .....";
-    string color = "Red";
-}
-*/
+
+
 Paqueteria::Paqueteria(string nombre_paqueteria, string direccion, string color) {
     this-> nombre_paqueteria = nombre_paqueteria;
     this-> direccion = direccion;

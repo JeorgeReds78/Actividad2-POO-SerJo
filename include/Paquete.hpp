@@ -22,9 +22,7 @@ using std::string;
 class Paquete  {
 	private:
 
-		Paqueteria nom_paqueteria;
-		Paqueteria salida_dir;
-		Paqueteria color_id; //Funciona como identificador de Paqueteria
+		Paqueteria datos_paqueteria; //Funciona como identificador de Paqueteria
 
 		Enviador nombre_enviador;
 		Destinatario datos_destinatario;
@@ -38,6 +36,7 @@ class Paquete  {
 
 	public:
 		//Constructores
+		
 		Paquete(string paqueteria, string salida, string color,
 		string de,
 		string para, string direccion_destinatario,
@@ -46,9 +45,9 @@ class Paquete  {
 
 		//Geters
 
-		Paqueteria get_nombre_paqueteria() {return nom_paqueteria;}
-		Paqueteria get_direccion_envio() {return salida_dir;}
-		Paqueteria get_color() {return color_id;}
+		Paqueteria get_datos_paqueteria() {return datos_paqueteria;}
+
+
 
 		Enviador get_nombre_enviador() {return nombre_enviador;}
 		Destinatario get_datos_destinatario() {return datos_destinatario;}
@@ -61,9 +60,7 @@ class Paquete  {
 
 
 		//Seters
-		void set_nombre_paquetera(string paqueteria);
-		void set_direccion_paqueteria(string salida);
-		void set_color_paqueteria(string color);
+		void set_datos_paqueteria(string paqueteria,string salida,string color);
 
 		void set_nombre_enviador(string de);
 		void set_datos_destinatario(string para, string direccion);
