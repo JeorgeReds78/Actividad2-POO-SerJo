@@ -10,6 +10,10 @@ Definicion de funciones utilizadas en main
 #include "../include/Enviador.hpp"
 #include "../include/Paquete.hpp"
 #include "../include/Destinatario.hpp"
+#include "../include/Caja.hpp"
+#include "../include/Cilindro.hpp"
+#include "../include/Sobre.hpp"
+#include "../include/Paqueteria.hpp"
 
 void enviarPaquete();
 
