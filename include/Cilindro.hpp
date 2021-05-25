@@ -22,8 +22,24 @@ class Cilindro  {
 		
 	public:
 		//Constructor
-		Cilindro();
-		Cilindro(double radio, double altura);
+		Cilindro(string paqueteria, string salida, string color,
+        string de,
+        string para, string direccion_destinatario,
+		string id_paquete, double peso,
+		string fecha_envio, string notas, double radio, double altura);
+
+		//geters
+		double get_radio() { return radio; }
+		double get_alto() { return altura; }
+
+		//seters
+
+		void set_radio(double radio);
+		void set_alto(double altura);
+
+		//otros
+
+		void pedidoFinal();
 
 };
 #endif
