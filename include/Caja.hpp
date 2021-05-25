@@ -11,11 +11,12 @@ Definicion de clase Destinatario
 #ifndef CAJA_H
 #define CAJA_H
 
+#include "Paquete.hpp"
 #include <string>
 
 using std::string;
 	
-class Caja  {
+class Caja : public Paquete  {
     private:
 		double largo;
         double ancho;
@@ -23,7 +24,29 @@ class Caja  {
 		
 	public:
 		//Constructor
-		Caja();
-		Caja(double largo, double ancho, double altura);
+		Caja(string paqueteria, string salida, string color,
+        string de,
+        string para, string direccion_destinatario,
+		string id_paquete, double peso,
+		string fecha_envio, string notas,
+		double largo, double ancho, double altura);
+
+		//geters
+		double get_largo() { return largo; }
+		double get_ancho() { return ancho; }
+		double get_alto() { return altura; }
+
+		//seters
+
+		void set_largo(double largo);
+		void set_ancho(double ancho);
+		void set_alto(double altura);
+
+		//otros
+
+		void pedidoFinal();
+
+
+
 };
 #endif

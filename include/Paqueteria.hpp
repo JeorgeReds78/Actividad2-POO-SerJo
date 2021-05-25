@@ -17,13 +17,25 @@ using std::string;
 	
 class Paqueteria  {
     private:
-		string nombre;
-        string ubicacion;
-        string id;
+		//Objetos
+		string nombre_paqueteria;
+		string direccion;
+		string color;
 		
 	public:
 		//Constructor
-		Paqueteria();
-		Paqueteria(string nombre, string ubicacion, string id);
+		//Paqueteria();
+		Paqueteria(string nombre_paqueteria, string direccion, string color);
+
+		//Geters
+		string get_nombreP() { return nombre_paqueteria;}
+		string get_direccionP() {return direccion;}
+		string get_colorP() {return color;}
+
+		//Seters
+		void set_nombreP(string nombre_paqueteria);
+		void set_direccionP(string direccion);
+		void set_colorP(string color);
+
 };
 #endif
