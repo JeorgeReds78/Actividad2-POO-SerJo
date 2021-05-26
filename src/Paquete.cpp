@@ -9,6 +9,7 @@
 
 using namespace std;
 
+Paquete::Paquete() {}
 
 Paquete::Paquete(string paqueteria, string salida, string color,
         string de,
